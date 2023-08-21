@@ -1,5 +1,5 @@
 import streamlit as st
-# from mitosheet.streamlit.v1 import spreadsheet
+from mitosheet.streamlit.v1 import spreadsheet
 import pandas as pd
 from io import StringIO
 import os
@@ -12,7 +12,7 @@ file = st.text_input('Enter file directory')
 
 if file:
     st.write(file)
-    # spreadsheet(import_folder=file)
+    spreadsheet(import_folder='./data')
 # uploaded_file = st.file_uploader(label="Select your file for analysis",type='csv')
 # # # file_location =
 # # # file_location =  os. getcwd()
